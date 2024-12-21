@@ -12,7 +12,7 @@ document.getElementById("send-button").addEventListener("click", () => {
     document.getElementById("user-input").value = "";
 
     // Send user input to the backend
-    fetch("http://192.168.3.3:5000/api/chat", {
+    fetch("http://10.204.79.36:5000/api/chat", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
