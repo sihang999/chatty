@@ -68,7 +68,7 @@ function sendMessage() {
     // 滚动到最新消息
     chatWindow.scrollTop = chatWindow.scrollHeight;
 
-    fetch("http://127.0.0.1:5000/SihangRobot", {
+    fetch("https://chattpy-backend.onrender.com/SihangRobot", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userInput }),
