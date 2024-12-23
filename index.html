@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatGPT-like Web App</title>
+    <title>SihangChat Web App</title>
+    <meta name="description" content="A ChatGPT-like web app for seamless communication">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="chat-container">
-        <div id="chat-window"></div>
-        <div id="input-area">
-            <input type="text" id="user-input" placeholder="Type your message here..." />
-            <button id="send-button">Send</button>
+    <div id="layout">
+        <div id="info-section">
+            <h2>SihangRobot</h2>
+            <p>这是由 Sihang 创建的机器人。</p>
+            <p>当前为测试版本1。</p>
+            <p>The Chat Robot is created by SIHANG WU。</p>
+            <p>Current version is test version-1。</p>
+        </div>
+        <div id="chat-container" role="main">
+            <div id="chat-window" role="log" aria-live="polite" aria-relevant="additions"></div>
+            <div id="input-area" role="form">
+                <input type="text" id="user-input" placeholder="Type your message here..." />
+                <button id="send-button">Send</button>
+            </div>
         </div>
     </div>
-    <script src="server.js"></script>
+    <script src="server.js" defer></script>
 </body>
+
 </html>
+
+
